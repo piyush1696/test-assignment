@@ -1,0 +1,95 @@
+<div class="panel-heading">
+    <span>Basic Information</span>
+    {{#editView}}<button class="btn btn-primary edit-info"><span class="fa fa-remove"></span></button>{{/editView}}
+    {{^editView}}<button class="btn btn-primary edit-info"><span class="fa fa-edit"></span></button>{{/editView}}
+
+</div>
+{{#data}}
+<div class="panel-body">
+    <form class="form-horizontal" name="basic-info">
+        <div class="form-group">
+            {{#editView}}
+            <div class="input-group">
+                <div class="input-group-addon"><span class="icon glyphicon glyphicon-user"></span></div>
+                <input type="text" class="form-control" placeholder="Full Name" name="fullname" value="{{userName}}">
+            </div>
+            {{/editView}}
+            {{^editView}}
+            <label class="col-xs-4 col-sm-2 control-label">Full Name</label>
+            <div class="col-xs-8 col-sm-10">
+                <p class="form-control-static">{{userName}}</p>
+            </div>
+            {{/editView}}
+        </div>
+        <div class="form-group">
+            {{#editView}}
+                {{#personalDetail}}
+                <div class="input-group">
+                    <div class="input-group-addon"><span class="icon fa fa-group"></span></div>
+                    <div class="label-heading">Gender</div>
+                    <input type="radio" name="gender" value="Male" {{#maleChecked}} checked="true"{{/maleChecked}}><span> Male </span>
+                    <input type="radio" name="gender" value="Female" {{#femaleChecked}} checked="true"{{/femaleChecked}}><span> Female </span>
+                </div>
+                {{/personalDetail}}
+            {{/editView}}
+            {{^editView}}
+            <label class="col-xs-4 col-sm-2 control-label">Gender</label>
+            <div class="col-xs-8 col-sm-10">
+                <p class="form-control-static">{{personalDetail.gender}}</p>
+            </div>
+            {{/editView}}
+        </div>
+        <div class="form-group">
+            {{#editView}}
+            <div class="input-group">
+                <div class="input-group-addon"><span class="icon fa fa-calendar"></span></div>
+                <input type="date" class="form-control" name="dob" value="{{personalDetail.dob}}">
+            </div>
+            {{/editView}}
+            {{^editView}}
+            <label class="col-xs-4 col-sm-2 control-label">Birth Date</label>
+            <div class="col-xs-8 col-sm-10">
+                <p class="form-control-static">{{personalDetail.dob}}</p>
+            </div>
+            {{/editView}}
+        </div>
+        <div class="form-group">
+            {{#editView}}
+            <div class="input-group">
+                <div class="input-group-addon"><span class="icon fa fa-universal-access"></span></div>
+                <select class="form-control" name="status">
+                    <option value="Single" {{#singleSelected}} selected="true" {{/singleSelected}}>Single</option>
+                    <option value="Married" {{#marriedSelected}} selected="true" {{/marriedSelected}}>Married</option>
+                </select>
+            </div>
+            {{/editView}}
+            {{^editView}}
+            <label class="col-xs-4 col-sm-2 control-label">Martail Status</label>
+            <div class="col-xs-8 col-sm-10">
+                <p class="form-control-static">{{personalDetail.martailStatus}}</p>
+            </div>
+            {{/editView}}
+        </div>
+        <div class="form-group">
+            {{#editView}}
+            <div class="input-group">
+                <div class="input-group-addon"><span class="icon fa fa-map-marker"></span></div>
+                <textarea class="form-control" rows="2" name="location" placeholder="Location">{{personalDetail.location}}</textarea>
+            </div>
+            {{/editView}}
+            {{^editView}}
+            <label class="col-xs-4 col-sm-2 control-label">Location</label>
+            <div class="col-xs-8 col-sm-10">
+                <p class="form-control-static">{{personalDetail.location}}</p>
+            </div>
+            {{/editView}}
+        </div>
+        {{#editView}}
+        <div class="button-wrapper">
+            <button type="submit" class="btn btn-primary save-info"> Save </button>
+            <button type="button" class="btn btn-default close-info"> Cancel </button>
+        </div>
+        {{/editView}}
+    </form>
+</div>
+{{/data}}

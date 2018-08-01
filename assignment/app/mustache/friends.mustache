@@ -1,0 +1,25 @@
+<section class="friends-content">
+    {{#row}}
+    <div class="row">
+        {{#columns}}
+        <div class="col-xs-12 col-sm-6">
+            <div class="panel friends-tile">
+                <div class="panel-body row">
+                    <div class="col-xs-12 col-sm-4 ">
+                        <img src="{{profileImage}}" class="img-responsive friend-profile">
+                    </div>
+                    <div class="col-xs-12 col-sm-8">
+                        <div class="friend-data">
+                            <div class="friend-name">{{name}}</div>
+                            <div class="friend-designation">{{designation}}</div>
+                        </div>
+                        {{#following}}<button class="btn btn-primary button-unfollow" data-info={{userId}}>Unfollow</button>{{/following}}
+                        {{^following}}<button class="btn btn-default button-follow" data-info={{userId}}>Follow</button>{{/following}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{/columns}}
+    </div>
+    {{/row}}
+</section>

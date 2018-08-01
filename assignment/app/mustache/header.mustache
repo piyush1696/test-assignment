@@ -1,0 +1,12 @@
+<div class="container-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand navbar-title" href="#">Newput</a>
+    </div>
+    {{#userName}}
+    <ul class="nav navbar-nav navbar-right">
+        <li title="{{userName}}"><a href="#" class="user-photo"><img src="{{userProfile.profileImage}}" class="image img-responsive img-circle"></a></li>
+        <li title="{{userName}}"><a href="#" class="user-name">{{userName}}</a></li>
+        <li title="Logout" id="logout"><a href="#" class="logout"><span class="fa fa-power-off"></span></a></li>
+    </ul>
+    {{/userName}}
+</div>

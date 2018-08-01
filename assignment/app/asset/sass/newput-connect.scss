@@ -1,0 +1,899 @@
+$white : #FFFFFF;
+$grey : #E5E5E5;
+$red : #DD2C00;
+$blue : #337AB7;
+$darkGrey : #707873;
+$black : #000000;
+$timeLineColor : #CDCDCD;
+
+#header {
+    border-radius: 0;
+    font-size: 18px;
+    margin-bottom: 0;
+
+    .navbar-title {
+        color: $white;
+        font-size: 24px;
+        font-weight: 400;
+
+        &:focus, &:hover {
+            color: $white;
+            text-align: center;
+        }
+    }
+    .user-photo {
+        padding: 5px;
+
+        .image {
+            height: 40px;
+        }
+        &:hover, &:focus {
+            background-color: inherit;
+            outline: none;
+        }
+    }
+    .user-name {
+        color: $white;
+        font-weight: 400;
+
+        &:hover, &:focus {
+            background-color: inherit;
+            outline: none;
+        }
+    }
+    .logout {
+        color: $white;
+        font-size: 20px;
+        font-weight: 400;
+        &:hover {
+            background-color: inherit;
+        }
+    }
+}
+
+.login-wrapper {
+    box-shadow: 0px 0px 10px 5px $grey;
+    padding: 50px;
+    margin: 100px auto;
+    width: 40%;
+
+    .submit-wrapper {
+        padding-top: 20px;
+        text-align: center;
+
+        #login {
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .error, .invalid-attempt {
+        color: $red;
+        font-weight: 550;
+        font-size: 12px;
+    }
+    .invalid-attempt {
+        display: none;
+    }
+}
+
+.dashboard {
+    background-color: $grey;
+    padding: 0;
+
+    #cover-photo {
+        width: 100%;
+        height: 340px;
+    }
+
+    .content-wrapper {
+        margin-right: 0;
+        margin-left: 0;
+
+        .column-1 {
+            .panel {
+                .panel-heading {
+                    background-color: $white;
+                    border-bottom: 1px solid $grey;
+                    font-size: 16px;
+                    font-weight: 450;
+                    padding: 15px 10px;
+                    text-transform: uppercase;
+                }
+
+                .panel-body {
+                    background-color: $white;
+                }
+
+                .panel-footer {
+                    background-color: $white;
+
+                    .icon {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            #profile-tile {
+                border: none;
+                margin-top: -200px;
+
+                .thumbnail {
+                    padding: 15px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: .5px;
+
+                    .person-name {
+                        color: $black;
+                        font-size: 18px;
+                        font-weight: 600;
+                        padding: 10px 0;
+                        text-align: center;
+                    }
+                    .person-designation {
+                        font-size: 16px;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                    .person-data {
+                        padding-top: 20px;
+                        text-align: center;
+
+                        .person-followings, .person-followers, .person-activity {
+                            color : $blue;
+                            letter-spacing: 1px;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+
+            #friend-suggestion, #friend-list {
+                color: $darkGrey;
+                background-color: $white;
+                border: 0;
+                margin-bottom: 20px;
+
+                .suggestion-list {
+                    .suggestion-tile {
+                        padding: 10px;
+
+                        .suggestion-profile {
+                            padding: 0;
+                        }
+                        .suggestion-data {
+                            padding: 10px 20px;
+                            .suggestion-name {
+                                color: $black;
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+                            .suggestion-designation {
+                                color: darken($grey, 40%);
+                                font-size: 14px;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+
+                .friend-list {
+                    .friend-image {
+                        padding: 5px 0;
+                        width: 60px;
+                    }
+                }
+            }
+        }
+
+        .column-2 {
+            .navbar {
+                .navbar-header {
+                    .navbar-brand {
+                        display: none;
+                    }
+                }
+            }
+            #dashboard-header {
+                background-color: $white;
+                letter-spacing: .5px;
+                margin-right: 0px;
+                padding: 0;
+
+                .nav-tabs {
+                    border: none;
+
+                    .tab-item, .active {
+                        font-size: 18px;
+                        padding: 10px;
+                        text-align: center;
+
+                        a{
+                            border: none;
+                            color: $darkGrey;
+
+                            &:hover{
+                                color: $darkGrey;
+                                border: none;
+                                background-color: inherit;
+                                outline: none;
+                                text-decoration: none;
+                            }
+                            &:focus {
+                                outline: none;
+                                background-color: inherit;
+                            }
+                        }
+                    }
+                    .active {
+                        border-bottom: 3px solid $blue;
+                        a {
+                            color: $blue;
+                            &:hover{
+                                color: $blue;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #dashboard-content {
+                .timeline-content {
+                    margin: 20px 0 0 25px;
+
+                    .button-wrapper {
+                        text-align: right;
+                    }
+
+                    .timeline {
+                        margin: 0px 0px 10px 20px;
+                        padding: 20px 0;
+                        box-sizing: border-box;
+
+                        li {
+                            position: relative;
+                            list-style: none;
+
+                            .post {
+                                position: relative;
+                                min-height: 100px;
+                                padding: 0 0 20px 30px;
+                                border-left: 3px solid $timeLineColor;
+
+                                .owner-image {
+                                    padding: 5px;
+                                }
+
+                                .posted-person {
+                                    position: absolute;
+                                    top: -8px;
+                                    left: -27px;
+                                    max-width: 50px;
+                                    max-height: 50px;
+                                    background-color: $white;
+                                    border-radius: 50%;
+
+                                }
+
+                                .content {
+                                    margin: 0 0 0 10px;
+
+                                    .panel {
+                                        .panel-heading {
+                                            background-color: $white;
+                                            .post-heading {
+                                                font-size: 18px;
+                                            }
+                                            .post-duration {
+                                                color: $darkGrey;
+                                                font-family: 16px;
+                                            }
+                                        }
+                                        .panel-body {
+                                            background-color: $white;
+                                            padding: 0;
+
+                                            .image-post {
+                                                width: 100%;
+                                                padding: 0;
+                                            }
+                                            .post-description {
+                                                padding: 10px 20px;
+                                                .post-title {
+                                                    font-size: 16px;
+                                                    font-weight: 900;
+                                                    padding: 10px 0;
+                                                }
+                                                .post-content {
+                                                    color: $darkGrey;
+                                                    font-size: 14px;
+                                                    margin: 0;
+                                                }
+                                            }
+
+                                        }
+                                        .panel-footer {
+                                            background-color: $white;
+                                            .icon {
+                                                font-size: 14px;
+                                                margin-right: 15px;
+                                            }
+                                            .btn-like, .btn-share, .btn-comment{
+                                                color: $darkGrey;
+                                                font-weight: 500;
+                                                letter-spacing: .5px;
+
+                                                &:hover, &:focus {
+                                                    background-color: inherit;
+                                                    color: darken($darkGrey, 70%);
+                                                    outline: none;
+                                                    box-shadow: none;
+                                                    -webkit-box-shadow: none;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+
+                            &:first-child .post, &:last-child .post {
+                                border-left: 3px solid $timeLineColor;;
+                                min-height: 40px;
+                                padding: 0;
+
+                                .posted-person {
+                                    background-color: $timeLineColor;;
+                                    border-radius: 50%;
+                                    height: 0;
+                                    left: -9px;
+                                    padding: 8px;
+                                    position: absolute;
+                                    top: -15px;
+                                    width: 0;
+                                }
+                            }
+
+                            &:last-child .post  {
+                                min-height: 0;
+                                .posted-person  {
+                                    left: -10px;
+                                    top: 0px;
+                                }
+                            }
+                        }
+                    }
+
+                    #new-post-modal {
+                        .mandotry, .error {
+                            color: $red;
+                            font-size: 12px;
+                            font-weight: 500;
+                        }
+
+                        .form-horizontal .control-label  {
+                            text-align: left;
+                        }
+
+                        textarea{
+                            resize: none;
+                        }
+                        .character-left {
+                            color: $blue;
+                            font-weight: 700;
+                        }
+                    }
+                }
+
+                .about-content {
+                    margin: 0;
+
+                    .input-group-addon {
+                        background-color: inherit;
+                        border: none;
+                        vertical-align: top;
+                    }
+
+                    .panel {
+                        margin: 20px 0;
+
+                        .panel-heading {
+                            border-bottom: 1px solid $grey;
+                            color: $darkGrey;
+                            font-size: 16px;
+                            font-weight: 450;
+                            padding: 20px;
+                            text-transform: uppercase;
+
+                            .edit-work, .edit-info {
+                                float: right;
+                                font-size: 14px;
+                                padding: 5px 10px;
+
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+                        }
+                        .panel-body {
+                            padding: 0;
+                            margin: 0;
+                            .form-group {
+                                margin: 0;
+                                padding: 10px 20px;
+
+                                .control-label {
+                                    text-align: left;
+                                    padding: 0;
+                                }
+                                .form-control-static {
+                                    color: $darkGrey;
+                                }
+                                .label-heading {
+                                    margin-left: 5px;
+                                    font-size: 14px;
+                                    font-weight: 450;
+                                    padding-bottom: 5px;
+                                }
+                                textarea {
+                                    resize: none;
+                                }
+                                input, textarea, select {
+                                    border: none;
+                                    border-radius: 0;
+                                    border-bottom: 1px solid $grey;
+                                    box-shadow: none;
+
+                                    &:focus {
+                                        color: $blue;
+                                        border-bottom: 1px solid $blue;
+                                    }
+                                }
+                                input[type="radio"] {
+                                    margin: 0 5px;
+                                }
+                                input[type="radio"] :last-child{
+                                    margin-left: 10px;
+                                }
+                                .icon {
+                                    font-size: 14px;
+                                    padding: 5px 0;
+                                }
+                                .error {
+                                    color: $red;
+                                    font-weight: 550;
+                                    font-size: 12px;
+                                }
+                            }
+                            .button-wrapper {
+                                margin: 20px 0;
+                                text-align: center;
+                                .btn:focus, .btn:hover {
+                                    outline: none;
+                                }
+                                .btn:first-child {
+                                    margin-right: 20px;
+                                }
+                            }
+                        }
+                    }
+
+                    .line {
+                        border: 2px solid $timeLineColor;
+                        opacity: .8;
+                        margin: 30px 0;
+                    }
+                }
+
+                .photos-content {
+                    background-color: $white;
+                    margin: 20px 0;
+                    padding: 10px;
+                    .list-inline {
+                        margin: 0;
+                        .thumbnail {
+                            border: none;
+                            margin: 0;
+                            width: 20%;
+
+                            .photo-thumbnail {
+                                .photo {
+                                    width: 100%;
+                                    height: 110px;
+                                }
+                            }
+                        }
+                    }
+
+
+                    #selected-photo {
+                        .modal-body {
+                            text-align: center;
+
+                            .modal-image {
+                                display: inline;
+                            }
+                        }
+                    }
+                }
+
+                .friends-content {
+                    .friends-tile {
+                        background-color: $white;
+
+                        .panel-body {
+                            padding: 10px;
+
+                            .friend-data {
+                                padding-top: 20px;
+
+                                .friend-name {
+                                    font-size: 18px;
+                                    font-weight: 900;
+                                }
+                                .friend-designation {
+                                    color: $darkGrey;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                }
+                            }
+
+                            .button-follow, .button-unfollow {
+                                font-size: 14px;
+                                margin: 10px 0;
+                                padding: 5px 40px;
+
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 960px) {
+    .login-wrapper {
+        padding: 20px;
+        margin: 50px auto;
+        width: 50%;
+
+        input {
+            margin-left: 10px;
+        }
+
+        .submit-wrapper {
+            padding-top: 10px;
+            text-align: center;
+        }
+    }
+    #app-root {
+        #cover-photo {
+            width: 100%;
+            height: 200px;
+        }
+
+        .dashboard .content-wrapper {
+            .column-1 {
+                #profile-tile {
+                    margin-top: -110px;
+
+                    .thumbnail{
+                        .person-data {
+                            padding-top: 5px;
+
+                            .person-activity {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+
+                #friend-suggestion, #friend-list {
+                    color: $darkGrey;
+                    background-color: $white;
+                    margin-bottom: 20px;
+
+                    .suggestion-list {
+                        .suggestion-tile {
+                            padding: 0 10px;
+                            .suggestion-data {
+                                padding: 0 10px;
+                            }
+                        }
+                    }
+
+                    .friend-list {
+                        .friend-image {
+                            width: 55px;
+                        }
+                    }
+                }
+            }
+
+            .column-2 {
+                padding: 0;
+
+                #dashboard-content {
+                    padding: 0 20px;
+
+                    .timeline-content {
+                        margin: 10px 0;
+                        .timeline {
+                            li {
+                                .post {
+                                    padding-left: 20px;
+                                    .posted-person {
+                                        left: -20px;
+                                        height: 40px;
+                                        width: 40px;
+                                    }
+                                }
+
+                                &:first-child .post, &:last-child .post {
+                                    border-left: 3px solid $timeLineColor;;
+                                    min-height: 40px;
+                                    padding: 0;
+
+                                    .posted-person {
+                                        background-color: $timeLineColor;;
+                                        border-radius: 50%;
+                                        height: 0;
+                                        left: -9px;
+                                        padding: 8px;
+                                        position: absolute;
+                                        top: -15px;
+                                        width: 0;
+                                    }
+                                }
+
+                                &:last-child .post  {
+                                    min-height: 0;
+                                    .posted-person  {
+                                        left: -10px;
+                                        top: 0px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .about-content {
+                        .panel {
+                            .panel-body {
+                                padding: 10px 20px;
+
+                                .form-group {
+                                    padding: 10px 0;
+                                    .input-group {
+                                        padding-bottom: 10px;
+                                    }
+                                    .control-label {
+                                        padding-right: 0;
+                                        padding-top: 6px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .photos-content {
+                        .thumbnail {
+                            width: 25%;
+                            .photo-thumbnail {
+                                .photo {
+                                    height: 70px;
+                                }
+                            }
+                        }
+                    }
+
+                    .friends-content {
+                        .friends-tile {
+                            .panel-body {
+                                .friend-data {
+                                    padding-top: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+
+    .login-wrapper {
+        padding: 20px;
+        margin: 50px auto;
+        width: 80%;
+
+        input {
+            margin-left: 10px;
+        }
+
+        .submit-wrapper {
+            padding-top: 10px;
+            text-align: center;
+        }
+        .error {
+            color: $red;
+            font-weight: 550;
+        }
+        .prop {
+            display: none;
+            font-size: 12px;
+            font-weight: 450;
+            text-align: center;
+        }
+    }
+
+    #header {
+        .navbar-header {
+            float: left;
+        }
+        .navbar-nav li {
+            display: none;
+        }
+        #logout {
+            display: inline-block;
+            float: right;
+        }
+    }
+    #app-root {
+        #cover-photo {
+            height: 100%;
+        }
+        #friend-suggestion , #friend-list {
+            display: none;
+        }
+        .dashboard {
+            .content-wrapper {
+                .profile-image {
+                    width: 180px;
+                    height: 180px;
+                }
+                .column-1 {
+                    #profile-tile {
+                        margin: -60px 20px 0 20px;
+                        .thumbnail {
+                            .person-data {
+                                padding-top: 5px;
+                            }
+                            .person-followings, .person-followers, .person-activity {
+                                font-size: 18px;
+                            }
+
+                        }
+                    }
+                }
+
+                .column-2 {
+                    padding: 0;
+                    .navbar {
+                        .navbar-header {
+                            background-color: darken($white, 20%);
+                            .navbar-brand {
+                                display: block;
+                                color: $white;
+                            }
+
+                            .navbar-toggle {
+                                background-color: $white;
+
+                                .icon-bar {
+                                    background-color: $blue;
+                                }
+                            }
+                        }
+                    }
+
+                    #dashboard-content {
+                        padding: 0 20px;
+
+                        .timeline-content {
+                            margin: 10px 0;
+                            .timeline {
+                                li {
+                                    .post {
+                                        padding-left: 20px;
+                                        .posted-person {
+                                            left: -20px;
+                                            height: 40px;
+                                            width: 40px;
+                                        }
+                                    }
+
+                                    &:first-child .post, &:last-child .post {
+                                        border-left: 3px solid $timeLineColor;;
+                                        min-height: 40px;
+                                        padding: 0;
+
+                                        .posted-person {
+                                            background-color: $timeLineColor;;
+                                            border-radius: 50%;
+                                            height: 0;
+                                            left: -9px;
+                                            padding: 8px;
+                                            position: absolute;
+                                            top: -15px;
+                                            width: 0;
+                                        }
+                                    }
+
+                                    &:last-child .post  {
+                                        min-height: 0;
+                                        .posted-person  {
+                                            left: -10px;
+                                            top: 0px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .about-content {
+                            .panel {
+                                .panel-body {
+                                    padding: 10px 20px;
+
+                                    .form-group {
+                                        padding: 10px 0;
+                                        .input-group {
+                                            padding-bottom: 10px;
+                                        }
+                                        .control-label {
+                                            padding-right: 0;
+                                            padding-top: 6px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .photos-content {
+                            .list-inline {
+                                .thumbnail {
+                                    border: none;
+                                    margin: 0;
+                                    width: 50%;
+
+                                    .photo-thumbnail {
+                                        .photo {
+                                            width: 100%;
+                                            height: 90px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .friends-content {
+                            .friends-tile {
+                                .panel-body {
+                                    padding: 15px;
+                                    text-align: center;
+
+                                    .friend-profile {
+                                        display: inline;
+                                        width: 40%;
+                                    }
+
+                                    .button-follow, .button-unfollow {
+                                        padding: 5px 80px;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

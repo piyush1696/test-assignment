@@ -1,0 +1,15 @@
+<div class="panel-heading">Friends</div>
+<div class="panel-body friend-list">
+    <ul class="list-inline">
+        {{#data.friendList}}
+            {{#following}}
+                <li title="{{name}}"><img src="{{profileImage}}" class="img-responsive img-circle friend-image"></li>
+            {{/following}}
+        {{/data.friendList}}
+    </ul>
+    {{#isEmpty}}
+    <div class="text-center">
+        <span> You are not following anyone.</span>
+    </div>
+    {{/isEmpty}}
+</div>

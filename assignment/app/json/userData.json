@@ -1,0 +1,96 @@
+{
+   "userName": "Piyush",
+   "userDesignation": "Software Engineer",
+   "userProfile": {
+      "profileImage": "/asset/images/profile.jpg",
+      "heroImage": "/asset/images/d1.jpg"
+   },
+   "followers": 0,
+   "following": 0,
+   "activities": 0,
+   "personalDetail": {
+      "gender": "Male",
+      "dob": "1996-10-16",
+      "martailStatus": "Single",
+      "location": "Indore",
+      "skills": "HTML,CSS,JAVA",
+      "job": "Newput Info Tech."
+   },
+   "photoCollection": {
+      "photos": [
+         "/asset/images/photo-1.jpeg",
+         "/asset/images/photo-2.jpg",
+         "/asset/images/photo-3.jpg",
+         "/asset/images/photo-4.jpeg"
+      ]
+   },
+   "friendList": [
+      {
+         "userId": 1,
+         "profileImage": "/asset/images/profile.jpg",
+         "name": "Chinmay",
+         "designation": "Software Engineer",
+         "following": false
+      },
+      {
+         "userId": 2,
+         "profileImage": "/asset/images/profile.jpg",
+         "name": "Rahul",
+         "designation": "Tech geek",
+         "following": false
+      },
+      {
+         "userId": 3,
+         "profileImage": "/asset/images/profile.jpg",
+         "name": "Himanshu",
+         "designation": "CA",
+         "following": false
+      },
+      {
+         "userId": 4,
+         "profileImage": "/asset/images/profile.jpg",
+         "name": "Jayesh",
+         "designation": "Student",
+         "following": false
+      },
+      {
+         "userId": 5,
+         "profileImage": "/asset/images/profile-girl.png",
+         "name": "Shivani",
+         "designation": "Software Engineer",
+         "following": false
+      }
+   ],
+   "timelineData": {
+      "timeline": [
+         {
+            "ownerImage": "/asset/images/profile.jpg",
+            "post": {
+               "heading": "Shivam Posted",
+               "timeStamp": 1532457000000,
+               "content": {
+                  "title": "Header 1",
+                  "image": "/asset/images/hero-img.jpg",
+                  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit "
+              },
+              "like" : 10,
+              "comment" : 2
+            }
+         },
+         {
+            "ownerImage": "/asset/images/profile.jpg",
+            "post": {
+               "heading": "Chinmay Posted",
+               "timeStamp": 1532284200000,
+               "content": {
+                  "title": "Header 2",
+                  "image": "/asset/images/hero-img.jpg",
+                  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit "
+               },
+               "like" : 14,
+               "comment" : 0
+            }
+         }
+      ]
+   }
+}

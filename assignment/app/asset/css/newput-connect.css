@@ -1,0 +1,525 @@
+#header {
+  border-radius: 0;
+  font-size: 18px;
+  margin-bottom: 0; }
+  #header .navbar-title {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 400; }
+    #header .navbar-title:focus, #header .navbar-title:hover {
+      color: #FFFFFF;
+      text-align: center; }
+  #header .user-photo {
+    padding: 5px; }
+    #header .user-photo .image {
+      height: 40px; }
+    #header .user-photo:hover, #header .user-photo:focus {
+      background-color: inherit;
+      outline: none; }
+  #header .user-name {
+    color: #FFFFFF;
+    font-weight: 400; }
+    #header .user-name:hover, #header .user-name:focus {
+      background-color: inherit;
+      outline: none; }
+  #header .logout {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400; }
+    #header .logout:hover {
+      background-color: inherit; }
+
+.login-wrapper {
+  box-shadow: 0px 0px 10px 5px #E5E5E5;
+  padding: 50px;
+  margin: 100px auto;
+  width: 40%; }
+  .login-wrapper .submit-wrapper {
+    padding-top: 20px;
+    text-align: center; }
+    .login-wrapper .submit-wrapper #login:focus {
+      outline: none; }
+  .login-wrapper .error, .login-wrapper .invalid-attempt {
+    color: #DD2C00;
+    font-weight: 550;
+    font-size: 12px; }
+  .login-wrapper .invalid-attempt {
+    display: none; }
+
+.dashboard {
+  background-color: #E5E5E5;
+  padding: 0; }
+  .dashboard #cover-photo {
+    width: 100%;
+    height: 340px; }
+  .dashboard .content-wrapper {
+    margin-right: 0;
+    margin-left: 0; }
+    .dashboard .content-wrapper .column-1 .panel .panel-heading {
+      background-color: #FFFFFF;
+      border-bottom: 1px solid #E5E5E5;
+      font-size: 16px;
+      font-weight: 450;
+      padding: 15px 10px;
+      text-transform: uppercase; }
+    .dashboard .content-wrapper .column-1 .panel .panel-body {
+      background-color: #FFFFFF; }
+    .dashboard .content-wrapper .column-1 .panel .panel-footer {
+      background-color: #FFFFFF; }
+      .dashboard .content-wrapper .column-1 .panel .panel-footer .icon {
+        font-size: 14px; }
+    .dashboard .content-wrapper .column-1 #profile-tile {
+      border: none;
+      margin-top: -200px; }
+      .dashboard .content-wrapper .column-1 #profile-tile .thumbnail {
+        padding: 15px;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: .5px; }
+        .dashboard .content-wrapper .column-1 #profile-tile .thumbnail .person-name {
+          color: #000000;
+          font-size: 18px;
+          font-weight: 600;
+          padding: 10px 0;
+          text-align: center; }
+        .dashboard .content-wrapper .column-1 #profile-tile .thumbnail .person-designation {
+          font-size: 16px;
+          font-weight: 400;
+          text-align: center; }
+        .dashboard .content-wrapper .column-1 #profile-tile .thumbnail .person-data {
+          padding-top: 20px;
+          text-align: center; }
+          .dashboard .content-wrapper .column-1 #profile-tile .thumbnail .person-data .person-followings, .dashboard .content-wrapper .column-1 #profile-tile .thumbnail .person-data .person-followers, .dashboard .content-wrapper .column-1 #profile-tile .thumbnail .person-data .person-activity {
+            color: #337AB7;
+            letter-spacing: 1px;
+            font-size: 24px; }
+    .dashboard .content-wrapper .column-1 #friend-suggestion, .dashboard .content-wrapper .column-1 #friend-list {
+      color: #707873;
+      background-color: #FFFFFF;
+      border: 0;
+      margin-bottom: 20px; }
+      .dashboard .content-wrapper .column-1 #friend-suggestion .suggestion-list .suggestion-tile, .dashboard .content-wrapper .column-1 #friend-list .suggestion-list .suggestion-tile {
+        padding: 10px; }
+        .dashboard .content-wrapper .column-1 #friend-suggestion .suggestion-list .suggestion-tile .suggestion-profile, .dashboard .content-wrapper .column-1 #friend-list .suggestion-list .suggestion-tile .suggestion-profile {
+          padding: 0; }
+        .dashboard .content-wrapper .column-1 #friend-suggestion .suggestion-list .suggestion-tile .suggestion-data, .dashboard .content-wrapper .column-1 #friend-list .suggestion-list .suggestion-tile .suggestion-data {
+          padding: 10px 20px; }
+          .dashboard .content-wrapper .column-1 #friend-suggestion .suggestion-list .suggestion-tile .suggestion-data .suggestion-name, .dashboard .content-wrapper .column-1 #friend-list .suggestion-list .suggestion-tile .suggestion-data .suggestion-name {
+            color: #000000;
+            font-size: 16px;
+            font-weight: 500; }
+          .dashboard .content-wrapper .column-1 #friend-suggestion .suggestion-list .suggestion-tile .suggestion-data .suggestion-designation, .dashboard .content-wrapper .column-1 #friend-list .suggestion-list .suggestion-tile .suggestion-data .suggestion-designation {
+            color: #7f7f7f;
+            font-size: 14px;
+            font-weight: 400; }
+      .dashboard .content-wrapper .column-1 #friend-suggestion .friend-list .friend-image, .dashboard .content-wrapper .column-1 #friend-list .friend-list .friend-image {
+        padding: 5px 0;
+        width: 60px; }
+    .dashboard .content-wrapper .column-2 .navbar .navbar-header .navbar-brand {
+      display: none; }
+    .dashboard .content-wrapper .column-2 #dashboard-header {
+      background-color: #FFFFFF;
+      letter-spacing: .5px;
+      margin-right: 0px;
+      padding: 0; }
+      .dashboard .content-wrapper .column-2 #dashboard-header .nav-tabs {
+        border: none; }
+        .dashboard .content-wrapper .column-2 #dashboard-header .nav-tabs .tab-item, .dashboard .content-wrapper .column-2 #dashboard-header .nav-tabs .active {
+          font-size: 18px;
+          padding: 10px;
+          text-align: center; }
+          .dashboard .content-wrapper .column-2 #dashboard-header .nav-tabs .tab-item a, .dashboard .content-wrapper .column-2 #dashboard-header .nav-tabs .active a {
+            border: none;
+            color: #707873; }
+            .dashboard .content-wrapper .column-2 #dashboard-header .nav-tabs .tab-item a:hover, .dashboard .content-wrapper .column-2 #dashboard-header .nav-tabs .active a:hover {
+              color: #707873;
+              border: none;
+              background-color: inherit;
+              outline: none;
+              text-decoration: none; }
+            .dashboard .content-wrapper .column-2 #dashboard-header .nav-tabs .tab-item a:focus, .dashboard .content-wrapper .column-2 #dashboard-header .nav-tabs .active a:focus {
+              outline: none;
+              background-color: inherit; }
+        .dashboard .content-wrapper .column-2 #dashboard-header .nav-tabs .active {
+          border-bottom: 3px solid #337AB7; }
+          .dashboard .content-wrapper .column-2 #dashboard-header .nav-tabs .active a {
+            color: #337AB7; }
+            .dashboard .content-wrapper .column-2 #dashboard-header .nav-tabs .active a:hover {
+              color: #337AB7; }
+    .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content {
+      margin: 20px 0 0 25px; }
+      .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .button-wrapper {
+        text-align: right; }
+      .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline {
+        margin: 0px 0px 10px 20px;
+        padding: 20px 0;
+        box-sizing: border-box; }
+        .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li {
+          position: relative;
+          list-style: none; }
+          .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post {
+            position: relative;
+            min-height: 100px;
+            padding: 0 0 20px 30px;
+            border-left: 3px solid #CDCDCD; }
+            .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .owner-image {
+              padding: 5px; }
+            .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .posted-person {
+              position: absolute;
+              top: -8px;
+              left: -27px;
+              max-width: 50px;
+              max-height: 50px;
+              background-color: #FFFFFF;
+              border-radius: 50%; }
+            .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .content {
+              margin: 0 0 0 10px; }
+              .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .content .panel .panel-heading {
+                background-color: #FFFFFF; }
+                .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .content .panel .panel-heading .post-heading {
+                  font-size: 18px; }
+                .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .content .panel .panel-heading .post-duration {
+                  color: #707873;
+                  font-family: 16px; }
+              .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .content .panel .panel-body {
+                background-color: #FFFFFF;
+                padding: 0; }
+                .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .content .panel .panel-body .image-post {
+                  width: 100%;
+                  padding: 0; }
+                .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .content .panel .panel-body .post-description {
+                  padding: 10px 20px; }
+                  .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .content .panel .panel-body .post-description .post-title {
+                    font-size: 16px;
+                    font-weight: 900;
+                    padding: 10px 0; }
+                  .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .content .panel .panel-body .post-description .post-content {
+                    color: #707873;
+                    font-size: 14px;
+                    margin: 0; }
+              .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .content .panel .panel-footer {
+                background-color: #FFFFFF; }
+                .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .content .panel .panel-footer .icon {
+                  font-size: 14px;
+                  margin-right: 15px; }
+                .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .content .panel .panel-footer .btn-like, .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .content .panel .panel-footer .btn-share, .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .content .panel .panel-footer .btn-comment {
+                  color: #707873;
+                  font-weight: 500;
+                  letter-spacing: .5px; }
+                  .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .content .panel .panel-footer .btn-like:hover, .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .content .panel .panel-footer .btn-like:focus, .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .content .panel .panel-footer .btn-share:hover, .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .content .panel .panel-footer .btn-share:focus, .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .content .panel .panel-footer .btn-comment:hover, .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .content .panel .panel-footer .btn-comment:focus {
+                    background-color: inherit;
+                    color: black;
+                    outline: none;
+                    box-shadow: none;
+                    -webkit-box-shadow: none; }
+          .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li:first-child .post, .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li:last-child .post {
+            border-left: 3px solid #CDCDCD;
+            min-height: 40px;
+            padding: 0; }
+            .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li:first-child .post .posted-person, .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li:last-child .post .posted-person {
+              background-color: #CDCDCD;
+              border-radius: 50%;
+              height: 0;
+              left: -9px;
+              padding: 8px;
+              position: absolute;
+              top: -15px;
+              width: 0; }
+          .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li:last-child .post {
+            min-height: 0; }
+            .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li:last-child .post .posted-person {
+              left: -10px;
+              top: 0px; }
+      .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content #new-post-modal .mandotry, .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content #new-post-modal .error {
+        color: #DD2C00;
+        font-size: 12px;
+        font-weight: 500; }
+      .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content #new-post-modal .form-horizontal .control-label {
+        text-align: left; }
+      .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content #new-post-modal textarea {
+        resize: none; }
+      .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content #new-post-modal .character-left {
+        color: #337AB7;
+        font-weight: 700; }
+    .dashboard .content-wrapper .column-2 #dashboard-content .about-content {
+      margin: 0; }
+      .dashboard .content-wrapper .column-2 #dashboard-content .about-content .input-group-addon {
+        background-color: inherit;
+        border: none;
+        vertical-align: top; }
+      .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel {
+        margin: 20px 0; }
+        .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-heading {
+          border-bottom: 1px solid #E5E5E5;
+          color: #707873;
+          font-size: 16px;
+          font-weight: 450;
+          padding: 20px;
+          text-transform: uppercase; }
+          .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-heading .edit-work, .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-heading .edit-info {
+            float: right;
+            font-size: 14px;
+            padding: 5px 10px; }
+            .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-heading .edit-work:focus, .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-heading .edit-info:focus {
+              outline: none; }
+        .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body {
+          padding: 0;
+          margin: 0; }
+          .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group {
+            margin: 0;
+            padding: 10px 20px; }
+            .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group .control-label {
+              text-align: left;
+              padding: 0; }
+            .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group .form-control-static {
+              color: #707873; }
+            .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group .label-heading {
+              margin-left: 5px;
+              font-size: 14px;
+              font-weight: 450;
+              padding-bottom: 5px; }
+            .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group textarea {
+              resize: none; }
+            .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group input, .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group textarea, .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group select {
+              border: none;
+              border-radius: 0;
+              border-bottom: 1px solid #E5E5E5;
+              box-shadow: none; }
+              .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group input:focus, .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group textarea:focus, .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group select:focus {
+                color: #337AB7;
+                border-bottom: 1px solid #337AB7; }
+            .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group input[type="radio"] {
+              margin: 0 5px; }
+            .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group input[type="radio"] :last-child {
+              margin-left: 10px; }
+            .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group .icon {
+              font-size: 14px;
+              padding: 5px 0; }
+            .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group .error {
+              color: #DD2C00;
+              font-weight: 550;
+              font-size: 12px; }
+          .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .button-wrapper {
+            margin: 20px 0;
+            text-align: center; }
+            .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .button-wrapper .btn:focus, .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .button-wrapper .btn:hover {
+              outline: none; }
+            .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .button-wrapper .btn:first-child {
+              margin-right: 20px; }
+      .dashboard .content-wrapper .column-2 #dashboard-content .about-content .line {
+        border: 2px solid #CDCDCD;
+        opacity: .8;
+        margin: 30px 0; }
+    .dashboard .content-wrapper .column-2 #dashboard-content .photos-content {
+      background-color: #FFFFFF;
+      margin: 20px 0;
+      padding: 10px; }
+      .dashboard .content-wrapper .column-2 #dashboard-content .photos-content .list-inline {
+        margin: 0; }
+        .dashboard .content-wrapper .column-2 #dashboard-content .photos-content .list-inline .thumbnail {
+          border: none;
+          margin: 0;
+          width: 20%; }
+          .dashboard .content-wrapper .column-2 #dashboard-content .photos-content .list-inline .thumbnail .photo-thumbnail .photo {
+            width: 100%;
+            height: 110px; }
+      .dashboard .content-wrapper .column-2 #dashboard-content .photos-content #selected-photo .modal-body {
+        text-align: center; }
+        .dashboard .content-wrapper .column-2 #dashboard-content .photos-content #selected-photo .modal-body .modal-image {
+          display: inline; }
+    .dashboard .content-wrapper .column-2 #dashboard-content .friends-content .friends-tile {
+      background-color: #FFFFFF; }
+      .dashboard .content-wrapper .column-2 #dashboard-content .friends-content .friends-tile .panel-body {
+        padding: 10px; }
+        .dashboard .content-wrapper .column-2 #dashboard-content .friends-content .friends-tile .panel-body .friend-data {
+          padding-top: 20px; }
+          .dashboard .content-wrapper .column-2 #dashboard-content .friends-content .friends-tile .panel-body .friend-data .friend-name {
+            font-size: 18px;
+            font-weight: 900; }
+          .dashboard .content-wrapper .column-2 #dashboard-content .friends-content .friends-tile .panel-body .friend-data .friend-designation {
+            color: #707873;
+            font-size: 16px;
+            font-weight: 400; }
+        .dashboard .content-wrapper .column-2 #dashboard-content .friends-content .friends-tile .panel-body .button-follow, .dashboard .content-wrapper .column-2 #dashboard-content .friends-content .friends-tile .panel-body .button-unfollow {
+          font-size: 14px;
+          margin: 10px 0;
+          padding: 5px 40px; }
+          .dashboard .content-wrapper .column-2 #dashboard-content .friends-content .friends-tile .panel-body .button-follow:focus, .dashboard .content-wrapper .column-2 #dashboard-content .friends-content .friends-tile .panel-body .button-unfollow:focus {
+            outline: none; }
+
+@media screen and (min-width: 481px) and (max-width: 960px) {
+  .login-wrapper {
+    padding: 20px;
+    margin: 50px auto;
+    width: 50%; }
+    .login-wrapper input {
+      margin-left: 10px; }
+    .login-wrapper .submit-wrapper {
+      padding-top: 10px;
+      text-align: center; }
+  #app-root #cover-photo {
+    width: 100%;
+    height: 200px; }
+  #app-root .dashboard .content-wrapper .column-1 #profile-tile {
+    margin-top: -110px; }
+    #app-root .dashboard .content-wrapper .column-1 #profile-tile .thumbnail .person-data {
+      padding-top: 5px; }
+      #app-root .dashboard .content-wrapper .column-1 #profile-tile .thumbnail .person-data .person-activity {
+        font-size: 18px; }
+  #app-root .dashboard .content-wrapper .column-1 #friend-suggestion, #app-root .dashboard .content-wrapper .column-1 #friend-list {
+    color: #707873;
+    background-color: #FFFFFF;
+    margin-bottom: 20px; }
+    #app-root .dashboard .content-wrapper .column-1 #friend-suggestion .suggestion-list .suggestion-tile, #app-root .dashboard .content-wrapper .column-1 #friend-list .suggestion-list .suggestion-tile {
+      padding: 0 10px; }
+      #app-root .dashboard .content-wrapper .column-1 #friend-suggestion .suggestion-list .suggestion-tile .suggestion-data, #app-root .dashboard .content-wrapper .column-1 #friend-list .suggestion-list .suggestion-tile .suggestion-data {
+        padding: 0 10px; }
+    #app-root .dashboard .content-wrapper .column-1 #friend-suggestion .friend-list .friend-image, #app-root .dashboard .content-wrapper .column-1 #friend-list .friend-list .friend-image {
+      width: 55px; }
+  #app-root .dashboard .content-wrapper .column-2 {
+    padding: 0; }
+    #app-root .dashboard .content-wrapper .column-2 #dashboard-content {
+      padding: 0 20px; }
+      #app-root .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content {
+        margin: 10px 0; }
+        #app-root .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post {
+          padding-left: 20px; }
+          #app-root .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .posted-person {
+            left: -20px;
+            height: 40px;
+            width: 40px; }
+        #app-root .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li:first-child .post, #app-root .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li:last-child .post {
+          border-left: 3px solid #CDCDCD;
+          min-height: 40px;
+          padding: 0; }
+          #app-root .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li:first-child .post .posted-person, #app-root .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li:last-child .post .posted-person {
+            background-color: #CDCDCD;
+            border-radius: 50%;
+            height: 0;
+            left: -9px;
+            padding: 8px;
+            position: absolute;
+            top: -15px;
+            width: 0; }
+        #app-root .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li:last-child .post {
+          min-height: 0; }
+          #app-root .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li:last-child .post .posted-person {
+            left: -10px;
+            top: 0px; }
+      #app-root .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body {
+        padding: 10px 20px; }
+        #app-root .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group {
+          padding: 10px 0; }
+          #app-root .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group .input-group {
+            padding-bottom: 10px; }
+          #app-root .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group .control-label {
+            padding-right: 0;
+            padding-top: 6px; }
+      #app-root .dashboard .content-wrapper .column-2 #dashboard-content .photos-content .thumbnail {
+        width: 25%; }
+        #app-root .dashboard .content-wrapper .column-2 #dashboard-content .photos-content .thumbnail .photo-thumbnail .photo {
+          height: 70px; }
+      #app-root .dashboard .content-wrapper .column-2 #dashboard-content .friends-content .friends-tile .panel-body .friend-data {
+        padding-top: 0; } }
+
+@media screen and (max-width: 480px) {
+  .login-wrapper {
+    padding: 20px;
+    margin: 50px auto;
+    width: 80%; }
+    .login-wrapper input {
+      margin-left: 10px; }
+    .login-wrapper .submit-wrapper {
+      padding-top: 10px;
+      text-align: center; }
+    .login-wrapper .error {
+      color: #DD2C00;
+      font-weight: 550; }
+    .login-wrapper .prop {
+      display: none;
+      font-size: 12px;
+      font-weight: 450;
+      text-align: center; }
+  #header .navbar-header {
+    float: left; }
+  #header .navbar-nav li {
+    display: none; }
+  #header #logout {
+    display: inline-block;
+    float: right; }
+  #app-root #cover-photo {
+    height: 100%; }
+  #app-root #friend-suggestion, #app-root #friend-list {
+    display: none; }
+  #app-root .dashboard .content-wrapper .profile-image {
+    width: 180px;
+    height: 180px; }
+  #app-root .dashboard .content-wrapper .column-1 #profile-tile {
+    margin: -60px 20px 0 20px; }
+    #app-root .dashboard .content-wrapper .column-1 #profile-tile .thumbnail .person-data {
+      padding-top: 5px; }
+    #app-root .dashboard .content-wrapper .column-1 #profile-tile .thumbnail .person-followings, #app-root .dashboard .content-wrapper .column-1 #profile-tile .thumbnail .person-followers, #app-root .dashboard .content-wrapper .column-1 #profile-tile .thumbnail .person-activity {
+      font-size: 18px; }
+  #app-root .dashboard .content-wrapper .column-2 {
+    padding: 0; }
+    #app-root .dashboard .content-wrapper .column-2 .navbar .navbar-header {
+      background-color: #cccccc; }
+      #app-root .dashboard .content-wrapper .column-2 .navbar .navbar-header .navbar-brand {
+        display: block;
+        color: #FFFFFF; }
+      #app-root .dashboard .content-wrapper .column-2 .navbar .navbar-header .navbar-toggle {
+        background-color: #FFFFFF; }
+        #app-root .dashboard .content-wrapper .column-2 .navbar .navbar-header .navbar-toggle .icon-bar {
+          background-color: #337AB7; }
+    #app-root .dashboard .content-wrapper .column-2 #dashboard-content {
+      padding: 0 20px; }
+      #app-root .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content {
+        margin: 10px 0; }
+        #app-root .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post {
+          padding-left: 20px; }
+          #app-root .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li .post .posted-person {
+            left: -20px;
+            height: 40px;
+            width: 40px; }
+        #app-root .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li:first-child .post, #app-root .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li:last-child .post {
+          border-left: 3px solid #CDCDCD;
+          min-height: 40px;
+          padding: 0; }
+          #app-root .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li:first-child .post .posted-person, #app-root .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li:last-child .post .posted-person {
+            background-color: #CDCDCD;
+            border-radius: 50%;
+            height: 0;
+            left: -9px;
+            padding: 8px;
+            position: absolute;
+            top: -15px;
+            width: 0; }
+        #app-root .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li:last-child .post {
+          min-height: 0; }
+          #app-root .dashboard .content-wrapper .column-2 #dashboard-content .timeline-content .timeline li:last-child .post .posted-person {
+            left: -10px;
+            top: 0px; }
+      #app-root .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body {
+        padding: 10px 20px; }
+        #app-root .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group {
+          padding: 10px 0; }
+          #app-root .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group .input-group {
+            padding-bottom: 10px; }
+          #app-root .dashboard .content-wrapper .column-2 #dashboard-content .about-content .panel .panel-body .form-group .control-label {
+            padding-right: 0;
+            padding-top: 6px; }
+      #app-root .dashboard .content-wrapper .column-2 #dashboard-content .photos-content .list-inline .thumbnail {
+        border: none;
+        margin: 0;
+        width: 50%; }
+        #app-root .dashboard .content-wrapper .column-2 #dashboard-content .photos-content .list-inline .thumbnail .photo-thumbnail .photo {
+          width: 100%;
+          height: 90px; }
+      #app-root .dashboard .content-wrapper .column-2 #dashboard-content .friends-content .friends-tile .panel-body {
+        padding: 15px;
+        text-align: center; }
+        #app-root .dashboard .content-wrapper .column-2 #dashboard-content .friends-content .friends-tile .panel-body .friend-profile {
+          display: inline;
+          width: 40%; }
+        #app-root .dashboard .content-wrapper .column-2 #dashboard-content .friends-content .friends-tile .panel-body .button-follow, #app-root .dashboard .content-wrapper .column-2 #dashboard-content .friends-content .friends-tile .panel-body .button-unfollow {
+          padding: 5px 80px; } }

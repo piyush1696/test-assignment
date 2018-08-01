@@ -1,0 +1,53 @@
+<section class="timeline-content">
+    <div class="button-wrapper">
+        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#new-post-modal" id="new-post-btn">New Post</button>
+    </div>
+    <ul class="timeline">
+        <li>
+            <div class="post">
+                <span class="posted-person"></span>
+            </div>
+        </li>
+        {{#timeline}}
+        <li>
+            <div class="post">
+                {{#ownerImage}}
+                <span class="posted-person"><img src="{{ownerImage}}" class="img-responsive img-circle owner-image"> </span>
+                {{/ownerImage}}
+                {{#post}}
+                <div class="content">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <div class="post-heading">{{heading}}</div>
+                            <div class="post-duration">{{duration}}</div>
+                        </div>
+                        <div class="panel-body">
+                            {{#content}}
+                            <img src="{{image}}" class="img-responsive image-post">
+                            <div class="post-description">
+                                <div class="post-title">{{title}}</div>
+                                <p class="post-content">{{description}}</p>
+                            </div>
+                            {{/content}}
+                        </div>
+                        <div class="panel-footer">
+                            <ul class="list-inline">
+                                <li><a class="btn btn-like"><span class="fa fa-heart icon"></span><span>Like ({{like}})</span> </a></li>
+                                <li><a class="btn btn-comment"><span class="fa fa-comment icon"></span>Comment ({{comment}}) </a></li>
+                                <li><a class="btn btn-share"><span class="fa fa-send icon"></span>Share</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                {{/post}}
+            </div>
+        </li>
+        {{/timeline}}
+        <li>
+            <div class="post">
+                <span class="posted-person"></span>
+            </div>
+        </li>
+    </ul>
+    <div class="modal fade" id="new-post-modal" tabindex="-1" role="dialog"></div>
+</section>

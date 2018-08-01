@@ -1,0 +1,60 @@
+{{#data}}
+<div class="panel-heading">
+    <span>Work</span>
+    {{#editView}}<button class="btn btn-primary edit-work"><span class="fa fa-remove"></span></button>{{/editView}}
+    {{^editView}}<button class="btn btn-primary edit-work"><span class="fa fa-edit"></span></button>{{/editView}}
+    </span></button>
+</div>
+<div class="panel-body">
+    <form class="form-horizontal">
+        <div class="form-group">
+            {{#editView}}
+            <div class="input-group">
+                <div class="input-group-addon"><span class="icon fa fa-briefcase"></span></div>
+                <input type="text" class="form-control" placeholder="Designation" name="designation" value="{{userDesignation}}">
+            </div>
+            {{/editView}}
+            {{^editView}}
+            <label class="col-xs-4 col-sm-2 control-label">Occupation</label>
+            <div class="col-xs-8 col-sm-10">
+                <p class="form-control-static">{{userDesignation}}</p>
+            </div>
+            {{/editView}}
+        </div>
+        <div class="form-group">
+            {{#editView}}
+            <div class="input-group">
+                <div class="input-group-addon"><span class="icon fa fa-mortar-board"></span></div>
+                <input type="text" class="form-control" placeholder="Skills" name="skills" value="{{personalDetail.skills}}">
+            </div>
+            {{/editView}}
+            {{^editView}}
+            <label class="col-xs-4 col-sm-2 control-label">Skills</label>
+            <div class="col-xs-8 col-sm-10">
+                <p class="form-control-static">{{personalDetail.skills}}</p>
+            </div>
+            {{/editView}}
+        </div>
+        <div class="form-group">
+            {{#editView}}
+            <div class="input-group">
+                <div class="input-group-addon"><span class="icon fa fa-institution"></span></div>
+                <input type="text" class="form-control" placeholder="Job" name="job" value="{{personalDetail.job}}">
+            </div>
+            {{/editView}}
+            {{^editView}}
+            <label class="col-xs-4 col-sm-2 control-label">Jobs</label>
+            <div class="col-xs-8 col-sm-10">
+                <p class="form-control-static">{{personalDetail.job}}</p>
+            </div>
+            {{/editView}}
+        </div>
+        {{#editView}}
+        <div class="button-wrapper">
+            <button type="button" class="btn btn-primary save-work"> Save </button>
+            <button type="button" class="btn btn-default close-work"> Cancel </button>
+        </div>
+        {{/editView}}
+    </form>
+</div>
+{{/data}}
